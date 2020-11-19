@@ -1,4 +1,6 @@
 {
     "Blog": true,
-    "Puntos": true
+    "Puntos": true,
+    "Exportar": true,
+    "Reportes": true
 }

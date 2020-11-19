@@ -34,6 +34,7 @@ Route::get('/ListarProductos',[ProductoController::class,'listarProducto'])->nam
 Route::get('/RegistrarProductos',function(){
     return view('producto');
 });
+Route::get('/productos',[ProductoController::class,'productos_all'])->name('productos_all');
 /* SALES */
 
 Route::get('/sales', [SalesController::class,'CrearVenta'])->name('sales');

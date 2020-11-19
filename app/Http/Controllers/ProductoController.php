@@ -24,6 +24,13 @@ class ProductoController extends Controller
         $ListaProductos = $ServiceProdu->ListProductos();
         return view('ListProducto',compact('ListaProductos'));
     }
+    public function productos_all(){
+        $ServiceProdu = new ServiceProducto();
+        $ListaProductos = $ServiceProdu->ListProductos();
+
+        
+        return \response(\json_encode($ListaProductos),200)->header('Content-type','text/plain');
+    }
 
     
 }

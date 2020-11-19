@@ -23,14 +23,16 @@
             <li class="nav-item active">
               <a class="nav-link"  href="{{Route('inicio')}}">Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="{{Route('sales')}}">Sales</a>
-            </li>
+          
             <li class="nav-item active">
                 <a class="nav-link" href="{{Route('ListarProductos')}}">Productos</a>
               </li>
+              {{-- <li class="nav-item active">
+                <a class="nav-link" href="{{Route('puntos')}}">Puntos</a>
+              </li> --}}
           </ul>
         </div>
+        
 
         <div>
             <ul class="navbar-nav mr-auto">
